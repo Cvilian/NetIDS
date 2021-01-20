@@ -81,7 +81,7 @@ class Model:
 
         return fp / (fp + tn + K.epsilon())
 
-    def predict(self, attributes, x):
+    def predict(self, x, attributes=207):
         if self.nn == None :
             if not os.path.isfile("../param/model.h5") :
                 print("Do training first!")
@@ -107,7 +107,7 @@ class Model:
 
         return t_tpr_history, t_fpr_history, v_tpr_history, v_fpr_history
 
-    def train(self, attributes, x, y, run_cv=False):
+    def train(self, x, y, run_cv=False, attributes=207):
 
         if run_cv == True :
             n_fold = 10

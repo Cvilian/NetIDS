@@ -78,6 +78,7 @@ def visualize_performance(res):
     fig.tight_layout()
     plt.show()
 
+# Here is a utility function used to display a 2D projection for visualization from the original dataset
 def visualize_tsne(x, y):
     n = x.shape[0]
     samples = np.random.choice(range(n), n//100, replace=False)
