@@ -73,7 +73,7 @@ If you wanna see how the raw data looks like, go to [Malware-Traffic-Analysis.ne
 * You may want to take a look at the underlying data structure, so we provided a utility function ([t-SNE](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding)) used to display a 2D projection for visualization from the original dataset.
 
 ```
->>> utils.visualize_tsne
+>>> utils.visualize_tsne(x, y)
 ```
 
 ![ex_screenshot](./img/tsne.png)
